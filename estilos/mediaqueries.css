@@ -15,7 +15,7 @@
         margin-top: 40px;
         background-color: #f4edede4;
         margin: 15px;
-        padding-top: 20px;
+       
         
         
     }
@@ -29,15 +29,26 @@
     
 }
 
-@media  screen and (min-width: 992px) {
+@media  screen and (min-width: 912px) {
+
+    section.noticias{
+        width: 83vw;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
     article{
-        width: 450px;
+        width: 280px;
         height: 400px;
         border-radius: 7px;
         margin-top: 40px;
         background-color: #f4edede4;
         margin: 15px;
-        padding-top: 20px;
+      
         
         
     }
@@ -81,7 +92,7 @@
        
         background-color: #f4edede4;
         margin: 15px;   
-        padding-top: 20px;
+      
         
         
     }
@@ -97,7 +108,7 @@
         font-family:  "Roboto Regular", "Roboto Medium", "Roboto Bold";
         font-size: 1.3em;
         font-weight: 500;
-        padding-top: 15px;
+        
         padding-left: 10px;
         padding-bottom: 20px;
     }

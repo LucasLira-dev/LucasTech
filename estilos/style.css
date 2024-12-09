@@ -28,6 +28,7 @@ header{
 
 header img{
     width: 280px;
+    
     background-color: #eaeaf0a9;
 }
 
@@ -100,12 +101,11 @@ section.noticias{
 
 article{
     width: 83vw;
-    height: 330px;
+    height: 350px;
     border-radius: 7px;
     margin-top: 40px;
     background-color: #f4edede4;
-    padding-top: 14px;
-
+    
 }
 
 article img{
