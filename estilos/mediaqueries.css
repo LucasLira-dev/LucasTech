@@ -1,10 +1,18 @@
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 768px) {
     section.noticias{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    button{
+        width: 280px;
+    }
+
+    #pesq{
+        width: 280px;
     }
 
 
@@ -25,11 +33,38 @@
         height: 170px;
         border-radius: 7px 7px 0px 0px; 
     }
+
+    .contato{
+       width: 100%;
+    }
+
+    .contato h2{
+        margin-left: 10px;
+    }
+
+    form{
+        margin: auto;
+    }
+
+    .cont{
+        width: 280px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
    
     
 }
 
 @media  screen and (min-width: 912px) {
+
+    main{
+        margin-top: 5px;
+    }
+
+    button{
+        width: 280px;
+    }
 
     section.noticias{
         width: 83vw;
@@ -38,7 +73,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-      
+        padding-top: 20px;
     }
 
     article{
@@ -48,9 +83,34 @@
         margin-top: 40px;
         background-color: #f4edede4;
         margin: 15px;
+                
+    }
+
+    form{
+        margin: auto;
+        width: 50vw;
+    
+    }
+
+    .contato h2{
+        margin: auto;
+        margin-left: 500px;
+    }
+
+    input{
+        width: 700px;
       
-        
-        
+    }
+
+    textarea{
+     width: 700px;
+    }
+
+    .cont{
+        width: 280px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
     }
     
 }
@@ -67,6 +127,10 @@
     }
 
     button{
+        width: 200px;
+    }
+
+    #pesq{
         width: 200px;
     }
 

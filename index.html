@@ -6,6 +6,7 @@
     <title>LucasTech</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <link rel="shortcut icon" href="imagens/favicon for LucasTech website.png">
 </head>
 <body>
     <header>
@@ -16,6 +17,10 @@
         <p id="descricao"> Explore o topo da programação em um só lugar! Seu destino único para dicas e tendências atuais.</p>
 
         <button id="botao"> BUSCAR ARTIGOS </button>
+
+        <input type="text" name="pesq" id="pesq" placeholder="digite sua pesquisa">
+
+      
     </header>
 
     <main>
@@ -85,14 +90,16 @@
             <h2> Entre em contato</h2>
 
             <form action="" autocomplete="on">
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" required>
 
-               <input type="email" name="email" id="email" placeholder="Email" >
+               <input type="email" name="email" id="email" placeholder="Email" required >
 
-              <textarea name="assunto" id="assunto" placeholder="Assunto da mensagem"></textarea> 
+              <textarea name="assunto" id="assunto" placeholder="Assunto da mensagem" required></textarea> 
+
+              <button class="cont"> ENTRAR EM CONTATO </button>
             </form>
 
-            <button class="cont"> ENTRAR EM CONTATO </button>
+         
         </section>
 
         
@@ -103,5 +110,7 @@
     <p> Desenvolvido por <span> <a href="https://github.com/LucasLira-dev" target="_blank"> LucasDev</span> </a></p>
   </footer>
    
+
+  <script src="script.js"></script>
 </body>
 </html>
