@@ -98,6 +98,7 @@ button:hover{
 main{
     
     background-color: #FFFFFF;
+    
 }
 
 #rec{
@@ -153,7 +154,9 @@ article p{
 .contato{
     font-family:  "Roboto Regular", "Roboto Medium", "Roboto Bold";
     margin-top: 40px;
+    padding-bottom: 30px;
     background-color: #d7d7dd30;
+
 }
 
 .contato h2{
@@ -201,16 +204,16 @@ textarea{
     height: 45px;
     border: none;
     border-radius: 5px;
-    display: block;
     margin: auto;
+    display: block;
     margin-top: 25px;
     margin-left: 26px;
     padding: 10px;
+   
 }
-
 footer{
-    margin-top: 40px;
-    background-color: #c9bebee4;
+    background-color: #f4edede4;
+    margin-bottom: 10px;
     height: 40px;
 }
 
