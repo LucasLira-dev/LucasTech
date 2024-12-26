@@ -9,6 +9,9 @@ botao.addEventListener("click", (evt)=>{
 })
 
 
+
+
+
 const btn_contato= document.getElementById("cont")
 const nome=  document.getElementById("nome")
 const email=  document.getElementById("email")
@@ -17,8 +20,9 @@ const assunto=  document.getElementById("assunto")
 
 btn_contato.addEventListener("click", (evt)=>{
     evt.preventDefault()
-    btn_contato.innerHTML= "Enviando....."
-
+   
+    if(nome.checkValidity() && email.checkValidity() && assunto.checkValidity()){
+     btn_contato.innerHTML= "Enviando....."
     promessa()
     .then((retorno)=>{
         btn_contato.innerHTML= retorno
@@ -27,6 +31,9 @@ btn_contato.addEventListener("click", (evt)=>{
     .catch((retorno)=>{
         btn_contato.innerHTML= retorno
     })
+} else{
+    alert(" Por favor, preencha os campos do formúlario")
+}
 })
 
 
@@ -36,7 +43,7 @@ const promessa=()=>{
         let tempo= 3000
 
         setTimeout(()=>{
-            if(nome.value!="" && email.value!="" && assunto.value!="" ){
+            if(nome.value!=="" && email.value!=="" && assunto.value!=="" ){
                 resolve("Mensagem enviada!")
             } else{
                 reject("Erro, tente novamente.")
@@ -50,5 +57,6 @@ const promessa=()=>{
 
     promise.catch((retorno)=>{
         btn_contato.innerHTML= retorno
+       
     })
 }

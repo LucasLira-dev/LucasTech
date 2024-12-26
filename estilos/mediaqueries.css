@@ -177,6 +177,10 @@
         padding-bottom: 20px;
     }
 
+    .contato{
+        background-color: #d7d7dd32;
+    }
+
     form{
         margin: auto;
         width: 50vw;
