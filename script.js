@@ -60,3 +60,46 @@ const promessa=()=>{
        
     })
 }
+
+
+
+let articleElements = document.querySelectorAll("article");
+
+let noresult = document.getElementById("semResultado");
+
+let recomendados = document.getElementById("rec");
+
+
+
+
+// Adiciona um evento de input ao elemento de entrada
+input.addEventListener("input", (e) => {
+    // Normaliza o valor de entrada para lidar com letras acentuadas
+    let inputed = e.target.value.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    let found = false;
+
+    // Itera sobre todos os elementos <article>
+    articleElements.forEach((article) => {
+        let h1 = article.querySelector("h2");
+        if (h1) {
+            // Normaliza o texto do <h2> para lidar com letras acentuadas
+            let h1Text = h1.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            if (h1Text.includes(inputed)) {
+                article.style.display = "block";
+                found = true;
+            } else {
+                article.style.display = "none";
+            }
+        }
+    });
+
+    // Verifica se o campo de entrada está vazio
+    if (inputed === "") {
+        noresult.style.display = "none";
+    } else {
+        noresult.style.display = found ? "none" : "block";
+        recomendados.style.display = found ? "block" : "none"; // Esconde "recomendados" se nenhum artigo for encontrado
+        footer.classList.add("fundo");
+    }
+});
+

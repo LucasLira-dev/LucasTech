@@ -75,6 +75,7 @@ button{
 
 button:hover{
     background-color: #6B51EE;
+    outline: 3px solid #846AFF;
 }
 #botao{
     padding: 10px;
@@ -242,8 +243,9 @@ a{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;  
     display: none;
+    padding-top: 15px;
 }
 
