@@ -99,7 +99,7 @@ input.addEventListener("input", (e) => {
     } else {
         noresult.style.display = found ? "none" : "block";
         recomendados.style.display = found ? "block" : "none"; // Esconde "recomendados" se nenhum artigo for encontrado
-        footer.classList.add("fundo");
+     
     }
 });
 
