@@ -1,12 +1,24 @@
 const input= document.getElementById("pesq")
-const botao= document.getElementById("botao")
+//const botao= document.getElementById("botao")
 
-botao.addEventListener("click", (evt)=>{
-    botao.style.display= "none"
-    input.style.display= "block"
 
-    input.focus()
-})
+document.addEventListener('DOMContentLoaded', function() {
+    const searchButton = document.querySelector('#botao');  // Substitua pelo seu seletor do botão
+
+    if (searchButton) {
+        searchButton.addEventListener('click', function() {
+            // Adicione aqui a funcionalidade de busca
+            botao.style.display= "none"
+            input.style.display= "block"
+        
+            input.focus()
+        });
+    } else {
+        console.warn('Botão de pesquisa não encontrado nesta página');
+    }
+});
+
+
 
 
 
